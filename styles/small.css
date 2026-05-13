@@ -1,7 +1,94 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #1d3557;
+    color: white;
+    padding: 1rem;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-area span {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li a:hover,
+.navigation .active {
+    background-color: #457b9d;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.main-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .card h2 {
@@ -46,8 +133,8 @@
 
 .course-card {
     padding: 1rem;
-    text-align: center;
     border-radius: 8px;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -83,51 +170,4 @@ footer {
 .socials a {
     color: white;
     text-decoration: none;
-}
-
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
-    margin-bottom: 1rem;
-}
-
-.buttons button {
-    flex: 1;
-    padding: .75rem;
-    border: none;
-    background-color: #1d3557;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.buttons button:hover {
-    background-color: #457b9d;
-}
-
-#courses {
-    display: grid;
-    gap: 1rem;
-}
-
-.course-card {
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.completed {
-    background-color: #a8dadc;
-}
-
-.not-completed {
-    background-color: #e76f51;
-    color: white;
-}
-
-.credits {
-    margin-top: 1rem;
-    font-weight: bold;
 }

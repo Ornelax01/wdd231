@@ -28,11 +28,3 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-@media (min-width: 768px) {
-
-    #courses {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
