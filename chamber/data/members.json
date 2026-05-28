@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Monterrey Tech Solutions",
+        "address": "123 Avenida Constitución, Monterrey",
+        "phone": "(81) 1111-2222",
+        "website": "https://example.com",
+        "image": "tech.webp",
+        "membership": 3
+    },
+
+    {
+        "name": "Mercado Verde",
+        "address": "45 Centro Histórico, Monterrey",
+        "phone": "(81) 2222-3333",
+        "website": "https://example.com",
+        "image": "market.webp",
+        "membership": 2
+    },
+
+    {
+        "name": "Fitness NL",
+        "address": "78 Garza Sada Avenue",
+        "phone": "(81) 3333-4444",
+        "website": "https://example.com",
+        "image": "fitness.webp",
+        "membership": 1
+    },
+
+    {
+        "name": "Café Sierra Madre",
+        "address": "9 Barrio Antiguo",
+        "phone": "(81) 4444-5555",
+        "website": "https://example.com",
+        "image": "cafe.webp",
+        "membership": 3
+    },
+
+    {
+        "name": "Diseños Modernos",
+        "address": "77 Fashion Drive",
+        "phone": "(81) 5555-6666",
+        "website": "https://example.com",
+        "image": "design.webp",
+        "membership": 2
+    },
+
+    {
+        "name": "Viajes Nuevo León",
+        "address": "88 Macroplaza Blvd",
+        "phone": "(81) 6666-7777",
+        "website": "https://example.com",
+        "image": "travel.webp",
+        "membership": 1
+    },
+
+    {
+        "name": "Smart Repairs MX",
+        "address": "12 Industrial Park",
+        "phone": "(81) 7777-8888",
+        "website": "https://example.com",
+        "image": "repair.webp",
+        "membership": 3
+    }
+]
