@@ -171,3 +171,97 @@ footer {
     color: white;
     text-decoration: none;
 }
+
+.join-layout {
+    display: grid;
+    gap: 1.5rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    display: grid;
+    gap: .4rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: .75rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+input[type="submit"] {
+    background-color: #003049;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeInCard 1s ease-in;
+}
+
+.membership-card a {
+    display: inline-block;
+    margin-top: .5rem;
+    color: #003049;
+    font-weight: bold;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 400px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.close-modal {
+    margin-top: 1rem;
+    padding: .75rem;
+    border: none;
+    background-color: #003049;
+    color: white;
+    cursor: pointer;
+}
+
+.thankyou-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+}

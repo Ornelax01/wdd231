@@ -28,3 +28,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.join-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+}
