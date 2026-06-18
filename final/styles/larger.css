@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .navigation li {
+        margin: 0;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .games-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        padding: 3rem;
+    }
+
+    .game-card img {
+        transition: transform .3s ease, filter .3s ease;
+    }
+
+    .game-card img:hover {
+        transform: scale(1.03);
+        filter: brightness(1.05);
+    }
+}

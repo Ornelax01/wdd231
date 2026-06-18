@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Board Game Vault | Home</title>
+
+    <meta name="description"
+        content="Board Game Vault helps players discover board games by category, difficulty, play time, and player count.">
+
+    <meta name="author" content="Carlos Ornelas">
+
+    <meta property="og:title" content="Board Game Vault">
+    <meta property="og:description" content="Discover board games for family nights, parties, and strategy sessions.">
+    <meta property="og:image" content="https://ornelax01.github.io/wdd231/final/images/catan.webp">
+    <meta property="og:url" content="https://ornelax01.github.io/wdd231/final/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="../favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" type="module" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span>Board Game Vault</span>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu">☰</button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="recommend.html">Recommend</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Board Game Vault</h1>
+
+    <section class="hero">
+        <div>
+            <h2>Find Your Next Favorite Board Game</h2>
+            <p>
+                Explore games for family nights, strategy sessions, parties,
+                and cooperative adventures.
+            </p>
+            <a class="button" href="games.html">Browse Games</a>
+        </div>
+    </section>
+
+    <section class="home-grid">
+        <section class="card">
+            <h2>Why Board Games?</h2>
+            <p>
+                Board games bring people together through strategy, creativity,
+                teamwork, and friendly competition.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Featured Categories</h2>
+            <ul>
+                <li>Strategy Games</li>
+                <li>Family Games</li>
+                <li>Cooperative Games</li>
+                <li>Party Games</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Your Preference</h2>
+            <p id="preference-message">
+                Choose a favorite category on the recommendation page.
+            </p>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Board Game Vault</p>
+    <p>WDD 231 Final Project | Carlos Ornelas</p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <p><a href="#" target="_blank">Project Video</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Board Game Vault | Thank You</title>
+
+    <meta name="description"
+        content="Thank you for submitting your board game recommendation request.">
+
+    <meta name="author" content="Carlos Ornelas">
+
+    <meta property="og:title" content="Board Game Vault">
+    <meta property="og:description" content="Thank you for submitting your recommendation request.">
+    <meta property="og:image" content="https://ornelax01.github.io/wdd231/final/images/catan.webp">
+    <meta property="og:url" content="https://ornelax01.github.io/wdd231/final/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="../favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const params = new URLSearchParams(window.location.search);
+
+            document.getElementById('userName').textContent =
+                params.get('name') || 'Not Provided';
+
+            document.getElementById('userEmail').textContent =
+                params.get('email') || 'Not Provided';
+
+            document.getElementById('userCategory').textContent =
+                params.get('category') || 'Not Provided';
+
+            document.getElementById('userPlayers').textContent =
+                params.get('players') || 'Not Provided';
+
+            document.getElementById('userTimestamp').textContent =
+                params.get('timestamp') || 'Not Available';
+
+            document.getElementById('year').textContent =
+                new Date().getFullYear();
+
+            const menuButton = document.querySelector('#menu');
+            const navigation = document.querySelector('.navigation');
+
+            menuButton.addEventListener('click', () => {
+                navigation.classList.toggle('open');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Board Game Vault</h1>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu">☰</button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="recommend.html">Recommend</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Thank You!</h1>
+
+    <section class="thankyou-card">
+
+        <h2>Your Recommendation Request Has Been Received</h2>
+
+        <p>
+            Thank you for submitting your preferences. Here is the information
+            you provided:
+        </p>
+
+        <p><strong>Name:</strong> <span id="userName"></span></p>
+
+        <p><strong>Email:</strong> <span id="userEmail"></span></p>
+
+        <p><strong>Favorite Category:</strong> <span id="userCategory"></span></p>
+
+        <p><strong>Preferred Players:</strong> <span id="userPlayers"></span></p>
+
+        <p><strong>Submission Date:</strong> <span id="userTimestamp"></span></p>
+
+        <p>
+            <a href="games.html">Browse Board Games</a>
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Board Game Vault</p>
+
+    <p>WDD 231 Final Project | Carlos Ornelas</p>
+
+    <p>
+        <a href="attributions.html">Attributions</a>
+    </p>
+
+    <p>
+        <a href="#" target="_blank">Project Video</a>
+    </p>
+</footer>
+
+</body>
+
+</html>
