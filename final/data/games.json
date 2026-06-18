@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Catan",
+    "players": "3-4",
+    "playtime": "60-120 min",
+    "difficulty": "Medium",
+    "year": 1995,
+    "category": "Strategy",
+    "image": "catan.webp",
+    "description": "Trade resources and build settlements while competing to expand your civilization."
+  },
+  {
+    "id": 2,
+    "name": "Ticket to Ride",
+    "players": "2-5",
+    "playtime": "30-60 min",
+    "difficulty": "Easy",
+    "year": 2004,
+    "category": "Family",
+    "image": "ticket-to-ride.webp",
+    "description": "Collect train cards and claim railway routes across North America."
+  },
+  {
+    "id": 3,
+    "name": "Carcassonne",
+    "players": "2-5",
+    "playtime": "35-45 min",
+    "difficulty": "Easy",
+    "year": 2000,
+    "category": "Tile Placement",
+    "image": "carcassonne.webp",
+    "description": "Build cities, roads, and farms by placing tiles and followers."
+  },
+  {
+    "id": 4,
+    "name": "Azul",
+    "players": "2-4",
+    "playtime": "30-45 min",
+    "difficulty": "Easy",
+    "year": 2017,
+    "category": "Abstract",
+    "image": "azul.webp",
+    "description": "Draft colorful tiles and create beautiful patterns to score points."
+  },
+  {
+    "id": 5,
+    "name": "Pandemic",
+    "players": "2-4",
+    "playtime": "45-60 min",
+    "difficulty": "Medium",
+    "year": 2008,
+    "category": "Cooperative",
+    "image": "pandemic.webp",
+    "description": "Work together to stop global disease outbreaks before time runs out."
+  },
+  {
+    "id": 6,
+    "name": "Wingspan",
+    "players": "1-5",
+    "playtime": "40-70 min",
+    "difficulty": "Medium",
+    "year": 2019,
+    "category": "Engine Building",
+    "image": "wingspan.webp",
+    "description": "Attract birds to your wildlife preserves and build powerful combinations."
+  },
+  {
+    "id": 7,
+    "name": "Splendor",
+    "players": "2-4",
+    "playtime": "30 min",
+    "difficulty": "Easy",
+    "year": 2014,
+    "category": "Strategy",
+    "image": "splendor.webp",
+    "description": "Collect gems and develop trade routes to attract prestigious nobles."
+  },
+  {
+    "id": 8,
+    "name": "Terraforming Mars",
+    "players": "1-5",
+    "playtime": "120 min",
+    "difficulty": "Hard",
+    "year": 2016,
+    "category": "Strategy",
+    "image": "terraforming-mars.webp",
+    "description": "Lead a corporation and transform Mars into a habitable planet."
+  },
+  {
+    "id": 9,
+    "name": "7 Wonders",
+    "players": "2-7",
+    "playtime": "30 min",
+    "difficulty": "Medium",
+    "year": 2010,
+    "category": "Card Drafting",
+    "image": "7-wonders.webp",
+    "description": "Develop an ancient civilization through military, science, and commerce."
+  },
+  {
+    "id": 10,
+    "name": "Root",
+    "players": "2-4",
+    "playtime": "60-90 min",
+    "difficulty": "Hard",
+    "year": 2018,
+    "category": "Asymmetric Strategy",
+    "image": "root.webp",
+    "description": "Competing woodland factions battle for control of the forest."
+  },
+  {
+    "id": 11,
+    "name": "Dixit",
+    "players": "3-6",
+    "playtime": "30 min",
+    "difficulty": "Easy",
+    "year": 2008,
+    "category": "Party",
+    "image": "dixit.webp",
+    "description": "Use imagination and storytelling to interpret beautiful artwork."
+  },
+  {
+    "id": 12,
+    "name": "King of Tokyo",
+    "players": "2-6",
+    "playtime": "30 min",
+    "difficulty": "Easy",
+    "year": 2011,
+    "category": "Dice",
+    "image": "king-of-tokyo.webp",
+    "description": "Become a giant monster and battle for control of Tokyo."
+  },
+  {
+    "id": 13,
+    "name": "Cascadia",
+    "players": "1-4",
+    "playtime": "30-45 min",
+    "difficulty": "Easy",
+    "year": 2021,
+    "category": "Tile Placement",
+    "image": "cascadia.webp",
+    "description": "Create harmonious habitats and wildlife ecosystems in the Pacific Northwest."
+  },
+  {
+    "id": 14,
+    "name": "Betrayal at House on the Hill",
+    "players": "3-6",
+    "playtime": "60 min",
+    "difficulty": "Medium",
+    "year": 2004,
+    "category": "Horror",
+    "image": "betrayal.webp",
+    "description": "Explore a haunted mansion until one player turns against the others."
+  },
+  {
+    "id": 15,
+    "name": "Gloomhaven",
+    "players": "1-4",
+    "playtime": "90-150 min",
+    "difficulty": "Hard",
+    "year": 2017,
+    "category": "Adventure",
+    "image": "gloomhaven.webp",
+    "description": "A massive campaign-based dungeon crawler with tactical combat."
+  }
+]
