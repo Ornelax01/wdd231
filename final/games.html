@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Board Game Vault | Game Library</title>
+    <title>Board Game Vault | Games</title>
 
     <meta name="description"
-        content="Browse a collection of popular board games including strategy, family, cooperative, and party games.">
+        content="Explore a collection of popular board games including strategy, family, cooperative, and party games.">
 
     <meta name="author" content="Carlos Ornelas">
 
-    <meta property="og:title" content="Board Game Vault">
-    <meta property="og:description" content="Discover and explore popular board games.">
+    <meta property="og:title" content="Board Game Vault - Explore Popular Board Games">
+
+    <meta property="og:description"
+        content="Discover strategy, family, cooperative, and party board games with detailed information, ratings, and recommendations for every type of player.">
+
     <meta property="og:image" content="https://ornelax01.github.io/wdd231/final/images/catan.webp">
+
     <meta property="og:url" content="https://ornelax01.github.io/wdd231/final/games.html">
+
     <meta property="og:type" content="website">
 
     <link rel="icon" href="../favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -30,42 +36,37 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/games.js" type="module"></script>
+
 </head>
 
 <body>
 
     <header>
+
         <div class="logo">
-            <h1>Board Game Vault</h1>
+            <span>Board Game Vault</span>
         </div>
 
-        <button id="menu">☰</button>
+        <button id="menu" aria-label="Open navigation menu">☰</button>
 
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="games.html" class="active">Games</a></li>
                 <li><a href="recommend.html">Recommend</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
 
-        <h1>Board Game Library</h1>
+        <h1>Board Game Collection</h1>
 
         <p id="favorite-message"></p>
 
-        <section class="intro">
-            <p>
-                Browse our collection of modern board games. Click on any game
-                to view additional information including category, player count,
-                difficulty level, and game description.
-            </p>
-        </section>
-
-        <section id="games-container" class="games-grid">
-        </section>
+        <div id="games-container" class="games-grid"></div>
 
         <dialog id="game-dialog">
 
@@ -80,7 +81,9 @@
     </main>
 
     <footer>
+
         <p>&copy; <span id="year"></span> Board Game Vault</p>
+
         <p>WDD 231 Final Project | Carlos Ornelas</p>
 
         <p>
@@ -90,6 +93,7 @@
         <p>
             <a href="#" target="_blank">Project Video</a>
         </p>
+
     </footer>
 
 </body>
