@@ -7,145 +7,123 @@
 
     <title>Board Game Vault | Recommendations</title>
 
-    <meta name="description"
-        content="Get personalized board game recommendations based on your preferences.">
+    <meta name="description" content="Get personalized board game recommendations based on your preferences.">
 
     <meta name="author" content="Carlos Ornelas">
 
-    <meta property="og:title" content="Board Game Vault">
-    <meta property="og:description" content="Find board games that match your interests and play style.">
+    <meta property="og:title" content="Board Game Vault Recommendations">
+
+    <meta property="og:description"
+        content="Find personalized board game recommendations based on your favorite category, player count, and gaming preferences.">
+
     <meta property="og:image" content="https://ornelax01.github.io/wdd231/final/images/catan.webp">
+
     <meta property="og:url" content="https://ornelax01.github.io/wdd231/final/recommend.html">
+
     <meta property="og:type" content="website">
 
     <link rel="icon" href="../favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/games.js" type="module"></script>
+    <script src="scripts/form.js" type="module"></script>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <h1>Board Game Vault</h1>
-    </div>
+    <header>
+        <div class="logo">
+            <span>Board Game Vault</span>
+        </div>
 
-    <button id="menu" aria-label="Open navigation menu">☰</button>
+        <button id="menu" aria-label="Open navigation menu">☰</button>
 
-    <nav>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="recommend.html" class="active">Recommend</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="recommend.html" class="active">Recommend</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-    <h1>Board Game Recommendation Form</h1>
+        <h1>Board Game Recommendation Form</h1>
 
-    <section class="form-intro">
+        <div class="form-intro">
+            <p>
+                Tell us about your gaming preferences and we will help you discover
+                board games that match your interests.
+            </p>
+        </div>
+
+        <form action="thankyou.html" method="get">
+
+            <label>
+                Name
+                <input type="text" name="name" title="Enter your name" autocomplete="name" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                    placeholder="example@email.com" required>
+            </label>
+
+            <label>
+                Favorite Game Category
+                <select name="category" id="category" title="Select your favorite game category" required>
+                    <option value="">Choose a Category</option>
+                    <option value="Strategy">Strategy</option>
+                    <option value="Family">Family</option>
+                    <option value="Cooperative">Cooperative</option>
+                    <option value="Party">Party</option>
+                    <option value="Adventure">Adventure</option>
+                </select>
+            </label>
+
+            <label>
+                Preferred Number of Players
+                <input type="number" name="players" title="Preferred number of players" min="1" max="10" required>
+            </label>
+
+            <label>
+                Additional Comments
+                <textarea name="comments" title="Additional comments"></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Get Recommendation">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Board Game Vault</p>
+
+        <p>WDD 231 Final Project | Carlos Ornelas</p>
+
         <p>
-            Tell us about your gaming preferences and we will help you discover
-            board games that match your interests.
+            <a href="attributions.html">Attributions</a>
         </p>
-    </section>
 
-    <form action="thankyou.html" method="get">
-
-        <label>
-            Name
-            <input
-                type="text"
-                name="name"
-                title="Enter your name"
-                autocomplete="name"
-                required>
-        </label>
-
-        <label>
-            Email
-            <input
-                type="email"
-                name="email"
-                title="Enter your email address"
-                autocomplete="email"
-                placeholder="example@email.com"
-                required>
-        </label>
-
-        <label>
-            Favorite Game Category
-            <select
-                name="category"
-                id="category"
-                title="Select your favorite game category"
-                required>
-
-                <option value="">Choose a Category</option>
-                <option value="Strategy">Strategy</option>
-                <option value="Family">Family</option>
-                <option value="Cooperative">Cooperative</option>
-                <option value="Party">Party</option>
-                <option value="Adventure">Adventure</option>
-            </select>
-        </label>
-
-        <label>
-            Preferred Number of Players
-            <input
-                type="number"
-                name="players"
-                title="Preferred number of players"
-                min="1"
-                max="10"
-                required>
-        </label>
-
-        <label>
-            Additional Comments
-            <textarea
-                name="comments"
-                title="Additional comments"></textarea>
-        </label>
-
-        <input
-            type="hidden"
-            id="timestamp"
-            name="timestamp">
-
-        <input
-            type="submit"
-            value="Get Recommendation">
-
-    </form>
-
-</main>
-
-<footer>
-    <p>&copy; <span id="year"></span> Board Game Vault</p>
-
-    <p>WDD 231 Final Project | Carlos Ornelas</p>
-
-    <p>
-        <a href="attributions.html">Attributions</a>
-    </p>
-
-    <p>
-        <a href="#" target="_blank">Project Video</a>
-    </p>
-</footer>
+        <p>
+            <a href="#" target="_blank">Project Video</a>
+        </p>
+    </footer>
 
 </body>
+
 </html>
